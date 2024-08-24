@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    position: relative;
+    width: 450px; /* Circle width + gap between circles */
+    height: 450px; /* Circle height + gap between circles */
+}
+
+h1{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+}
+#cursor{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 2; /* Ensure cursor is above other elements */
+    cursor: pointer; /* Optional: change cursor appearance */
+}
+
+#cir1 {
+    top: 0;
+    left: 0;
+}
+
+#cir2 {
+    top: 0;
+    right: 0;
+}
+
+#cir3 {
+    bottom: 0;
+    left: 0;
+}
+
+#cir4 {
+    bottom: 0;
+    right: 0;
+}
